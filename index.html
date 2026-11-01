@@ -5,57 +5,218 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bodie Cooper | Portfolio</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #1f3a5f;
+            color: white;
+            text-align: center;
+            padding: 35px 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 42px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .container {
+            max-width: 950px;
+            margin: auto;
+            padding: 30px 20px;
+        }
+
+        section {
+            background-color: white;
+            padding: 30px;
+            margin-bottom: 25px;
+            border-radius: 8px;
+        }
+
+        h2 {
+            color: #1f3a5f;
+            border-bottom: 2px solid #1f3a5f;
+            padding-bottom: 8px;
+        }
+
+        .about {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+        }
+
+        .about img {
+            width: 220px;
+            height: 220px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        .skills {
+            line-height: 2;
+        }
+
+        .project {
+            margin-bottom: 25px;
+        }
+
+        .resume-button {
+            display: inline-block;
+            background-color: #1f3a5f;
+            color: white;
+            padding: 12px 22px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .resume-button:hover {
+            background-color: #315986;
+        }
+
+        footer {
+            background-color: #1f3a5f;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 650px) {
+            .about {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            nav a {
+                display: inline-block;
+                margin: 5px 8px;
+            }
+        }
+    </style>
 </head>
 
 <body>
 
-    <h1>Bodie Cooper</h1>
-    <p>Data Science & Analytics Graduate Student</p>
+    <header>
+        <h1>Bodie Cooper</h1>
+        <p>Data Science & Analytics Graduate Student</p>
 
-    <hr>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#resume">Resume</a>
+        </nav>
+    </header>
 
-    <h2>About Me</h2>
+    <div class="container">
 
-    <p>
-        Hello! My name is Bodie Cooper. I am a graduate student studying
-        Data Science and Analytics at Old Dominion University. I am interested
-        in data analytics, artificial intelligence, machine learning, and
-        using data to solve real-world problems.
-    </p>
+        <section id="about">
+            <h2>About Me</h2>
 
-    <h2>Education</h2>
+            <div class="about">
+                <img src="bodie.jpg" alt="Professional photo of Bodie Cooper">
 
-    <h3>Old Dominion University</h3>
-    <p>Master of Science in Data Science & Analytics</p>
+                <p>
+                    Hello! My name is Bodie Cooper. I am a graduate student studying
+                    Data Science and Analytics at Old Dominion University. I am interested
+                    in data analytics, artificial intelligence, machine learning, and
+                    using data to solve real-world problems. I enjoy developing my
+                    technical skills and applying data-driven methods to practical
+                    projects and challenges.
+                </p>
+            </div>
+        </section>
 
-    <h3>James Madison University</h3>
-    <p>Bachelor's Degree in Integrated Science and Technology</p>
 
-    <h2>Technical Skills</h2>
+        <section id="education">
+            <h2>Education</h2>
 
-    <p>
-        Python | R | SQL | Data Visualization | Machine Learning | GitHub
-    </p>
+            <h3>Old Dominion University</h3>
+            <p>Master of Science in Data Science & Analytics</p>
 
-    <h2>Projects</h2>
+            <h3>James Madison University</h3>
+            <p>Bachelor's Degree in Integrated Science and Technology</p>
+        </section>
 
-    <h3>NFL Data Analytics Project</h3>
-    <p>
-        Analyzed NFL team statistics to explore which performance metrics
-        have the strongest relationship with winning games.
-    </p>
 
-    <h3>SafeRides Capstone Project</h3>
-    <p>
-        Worked on developing a data-driven system designed to improve ride
-        requests, scheduling, and communication for JMU SafeRides.
-    </p>
+        <section id="skills">
+            <h2>Technical Skills</h2>
 
-    <h2>Resume</h2>
+            <p class="skills">
+                Python | R | SQL | Data Visualization | Machine Learning |
+                Data Analytics | GitHub
+            </p>
+        </section>
 
-    <p>
-        My resume will be available here.
-    </p>
+
+        <section id="projects">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>NFL Data Analytics Project</h3>
+                <p>
+                    Analyzed NFL team statistics to investigate which performance
+                    metrics have the strongest relationship with winning games.
+                    The project uses data analysis and visualization techniques
+                    to identify important trends in team performance.
+                </p>
+            </div>
+
+            <div class="project">
+                <h3>SafeRides Capstone Project</h3>
+                <p>
+                    Worked on developing a data-driven system designed to improve
+                    ride requests, scheduling, and communication for JMU SafeRides.
+                    The project focused on improving rider convenience and
+                    transportation coordination.
+                </p>
+            </div>
+        </section>
+
+
+        <section id="resume">
+            <h2>Resume</h2>
+
+            <p>
+                View my resume to learn more about my education,
+                experience, technical skills, and projects.
+            </p>
+
+            <a class="resume-button" href="#">
+                View My Resume
+            </a>
+        </section>
+
+    </div>
+
+
+    <footer>
+        <p>&copy; 2026 Bodie Cooper</p>
+    </footer>
 
 </body>
 
